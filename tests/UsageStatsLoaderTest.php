@@ -14,7 +14,7 @@
  * @brief Test class for the UsageStatsLoader class
  */
 
-import('tests.PKPTestCase');
+import('lib.pkp.tests.PKPTestCase');
 import('plugins.generic.usageStats.UsageStatsLoader');
 
 class UsageStatsLoaderTest extends PKPTestCase {
