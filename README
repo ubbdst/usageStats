@@ -11,7 +11,7 @@ default reports to retrieve statistics related to the journal i.e. press,
 articles i.e. monographs and article i.e. monograph files.
 
 Usually an usage statistic event is a page view (journal i.e. press catalog index page,
-abstract article i.e. monograp page, etc) or a file download (article i.e. monograph file downloads).
+abstract article i.e. monograph page, etc) or a file download (article i.e. monograph file downloads).
 
 This plugin can also log statistics aggregated by the geo location of the
 user. To activate this option, take a look at the INSTALLATION section of
