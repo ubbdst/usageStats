@@ -2,18 +2,16 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
-  * locale.xml
+  * plugins/generic/usageStats/locale/it_IT/locale.xml
   *
-  * Copyright (c) 2013-2017 Simon Fraser University
-  * Copyright (c) 2003-2017 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
-  * Localization strings for the it_IT (Italiano) locale.
-  *
+  * Localization strings
   -->
  
 <locale name="it_IT" full_name="Italiano">
-
 	<message key="plugins.generic.usageStats.settings.logging">Accedi alle opzione per il log</message>
 	<message key="plugins.generic.usageStats.settings.createLogFiles">Crea i file di log</message>
 	<message key="plugins.generic.usageStats.settings.createLogFiles.description">Attivando questa opzione il plugin creerà dei file di log degli accessi dentro la dir dei files. Questi files saranno usati per estrarre le statistiche d'uso. Se non vuoi creare ulteriori file di accesso, puoi lasciare questa opzione disabilitata e usare i log del server</message>
@@ -42,6 +40,7 @@
 	<message key="plugins.generic.usageStats.settings.statsDisplayOptions.chartType.bar">Barre</message>
 	<message key="plugins.generic.usageStats.settings.statsDisplayOptions.chartType.line">Linea</message>
 	<message key="plugins.generic.usageStats.settings.statsDisplayOptions.datasetMaxCount">Seleziona il massimo numero di dati da presentare nello stesso momento su un specifico asse X. Un valore troppo alto può generare grafici difficili da leggere. Di solito un valore tra 3 e 5 va bene.</message>
+
 	<message key="plugins.generic.usageStats.usageStatsLoaderName">Nome del  task per il carico delle statistiche d'uso</message>
 	<message key="plugins.generic.usageStats.openFileFailed">Il file {$file} non può essere aperto ed è stato scartato.</message>
 	<message key="plugins.generic.usageStats.invalidLogEntry">La linea numero {$lineNumber} del file {$file} non è una linea di log corretta ed è stata scartata.</message>
@@ -52,17 +51,23 @@
 	<message key="plugins.generic.usageStats.noCounterBotList">La lista dei bot di COUNTER, {$botlist}, non può essere usata. Ci possono essere un paio di motivazioni al riguardo. Controlla se la lista è nella dir  'lib/pkp/plugins/generic/usageStats/lib/counter'. Controlla anche i permessi della dir e se c'è un solo file al suo interno.</message>
 	<message key="plugins.generic.usageStats.displayName">Statistiche d'uso</message>
 	<message key="plugins.generic.usageStats.description">Presenta le statistiche d'uso. Può usare il file access del server per estrarre le statistiche.</message>
+
 	<message key="plugins.reports.usageStats.report.displayName">Report PKP per le statistiche d'uso</message>
 	<message key="plugins.reports.usageStats.report.description">Report di default della PKP sulle statistiche d'uso. E' conforme a COUNTER</message>
+
 	<message key="plugins.reports.usageStats.optout.displayName">Informazioni privacy per le statistiche d'uso</message>
 	<message key="plugins.reports.usageStats.optout.description">Informazioni privacy per le statistiche d'uso</message>
 	<message key="plugins.generic.usageStats.optout.title">Informazioni sulle statistiche d'uso</message>
 	<message key="plugins.generic.usageStats.optout.shortDesc"><![CDATA[Registriamo statistiche d'uso in modo anonimo. Per favore leggi la <a href="{$privacyInfo}">privacy</a> per i dettagli.]]></message>
-	<message key="plugins.generic.usageStats.optout.done"><![CDATA[<p>Hai configurato con successo l'opt-out dalla registrazione delle statistiche d'uso. Fino a quando vedrai questo messaggio, on verranno registrate statistiche sul tuo uso di questo sito. Clicca sul bottone qui sotto per annullare questa decisione.</p>]]></message>
+
+	<message key="plugins.generic.usageStats.optout.done"><![CDATA[
+		<p>Hai configurato con successo l'opt-out dalla registrazione delle statistiche d'uso. Fino a quando vedrai questo messaggio, on verranno registrate statistiche sul tuo uso di questo sito. Clicca sul bottone qui sotto per annullare questa decisione.</p>]]></message>
 	<message key="plugins.generic.usageStats.optin">Accetto</message>
 	<message key="plugins.generic.usageStats.optout">Voglio essere escluso</message>
-	<message key="plugins.generic.usageStats.optout.cookie"><![CDATA[<p> Se lo desideri, puoi disattivare la procedura di raccolta dei dati. Facendo clic sul pulsante di disattivazione di seguito, puoi decidere di non essere presente nelle statistiche. Quando si fa clic sul pulsante di disattivazione, sul tuo sistema viene creato un <em> cookie </ em> per memorizzare la tua decisione. Se le impostazioni sulla privacy del tuo browser comportano l'eliminazione automatica dei cookie, dovrai disattivarti nuovamente la volta successiva che accedi a questo sito web. Il cookie è valido solo per un browser. Se utilizzi un browser diverso, dovrai escluderti di nuovo. Nessuna informazione personale è memorizzata all'interno di questo cookie. Questo cookie è valido per un anno dopo il tuo ultimo accesso. </ p>
-<p> Tieni presente che i log generali del server non sono influenzati dalla tua decisione di non essere nelle statistiche d'uso. Si prega di fare riferimento alla nostra <a href="{$privacyStatementUrl}"> informativa sulla privacy </a>. </ p>]]></message>
+	<message key="plugins.generic.usageStats.optout.cookie"><![CDATA[
+		<p>Se lo desideri, puoi disattivare la procedura di raccolta dei dati. Facendo clic sul pulsante di disattivazione di seguito, puoi decidere di non essere presente nelle statistiche. Quando si fa clic sul pulsante di disattivazione, sul tuo sistema viene creato un <em> cookie </ em> per memorizzare la tua decisione. Se le impostazioni sulla privacy del tuo browser comportano l'eliminazione automatica dei cookie, dovrai disattivarti nuovamente la volta successiva che accedi a questo sito web. Il cookie è valido solo per un browser. Se utilizzi un browser diverso, dovrai escluderti di nuovo. Nessuna informazione personale è memorizzata all'interno di questo cookie. Questo cookie è valido per un anno dopo il tuo ultimo accesso. </ p>
+		<p>Tieni presente che i log generali del server non sono influenzati dalla tua decisione di non essere nelle statistiche d'uso. Si prega di fare riferimento alla nostra <a href="{$privacyStatementUrl}"> informativa sulla privacy </a>. </ p>]]></message>
+
 	<message key="plugins.reports.usageStats.metricType">PKP/COUNTER</message>
 	<message key="plugins.reports.usageStats.metricType.full">Statistiche PKP (conformi a COUNTER)</message>
 	<message key="plugins.generic.usageStats.statsSum">Somma tutti i downloads</message>
