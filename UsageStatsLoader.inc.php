@@ -804,4 +804,4 @@ class UsageStatsLoader extends FileLoader {
 		return $this->_counterRobotsListFile;
 	}
 }
-?>
+

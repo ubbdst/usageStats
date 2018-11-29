@@ -135,4 +135,3 @@ class UsageStatsTemporaryRecordDAO extends DAO {
 	}
 }
 
-?>

@@ -64,10 +64,8 @@ class UsageStatsHandler extends Handler {
 	 * Get the Usage Stats plugin object
 	 * @return UsageStatsPlugin
 	 */
-	function &_getPlugin() {
-		$plugin =& PluginRegistry::getPlugin('generic', USAGESTATS_PLUGIN_NAME);
-		return $plugin;
+	function _getPlugin() {
+		return PluginRegistry::getPlugin('generic', USAGESTATS_PLUGIN_NAME);
 	}
 }
 
-?>

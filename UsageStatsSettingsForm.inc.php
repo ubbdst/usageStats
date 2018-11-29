@@ -182,4 +182,3 @@ class UsageStatsSettingsForm extends Form {
 	}
 }
 
-?>

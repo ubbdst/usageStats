@@ -19,4 +19,3 @@ require_once('UsageStatsPlugin.inc.php');
 
 return new UsageStatsPlugin();
 
-?>

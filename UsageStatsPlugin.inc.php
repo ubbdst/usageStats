@@ -100,12 +100,10 @@ class UsageStatsPlugin extends GenericPlugin {
 
 			if ($this->_dataPrivacyOn) {
 				$this->import('UsageStatsOptoutBlockPlugin');
-				$blockPlugin = new UsageStatsOptoutBlockPlugin($this);
-				PluginRegistry::register('blocks', $blockPlugin, $this->getPluginPath());
+				PluginRegistry::register('blocks', new UsageStatsOptoutBlockPlugin($this), $this->getPluginPath());
 			}
 
-			$reportPlugin = $this->getReportPlugin();
-			PluginRegistry::register('reports', $reportPlugin, $this->getPluginPath());
+			PluginRegistry::register('reports', $this->getReportPlugin(), $this->getPluginPath());
 
 			// Register callbacks.
 			HookRegistry::register('LoadHandler', array($this, 'callbackLoadHandler'));
@@ -858,4 +856,3 @@ class UsageStatsPlugin extends GenericPlugin {
 
 }
 
-?>

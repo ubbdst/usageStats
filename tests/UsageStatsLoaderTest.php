@@ -62,4 +62,4 @@ class UsageStatsLoaderTest extends PKPTestCase {
 		self::assertTrue($foundFile, 'getCounterRobotListFile() did not return a readable filename');
 	}
 }
-?>
+

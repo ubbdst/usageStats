@@ -170,4 +170,3 @@ abstract class PKPUsageStatsReportPlugin extends ReportPlugin {
 	}
 }
 
-?>

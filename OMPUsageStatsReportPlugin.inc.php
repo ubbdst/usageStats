@@ -132,4 +132,3 @@ class OMPUsageStatsReportPlugin extends PKPUsageStatsReportPlugin {
 	}
 }
 
-?>
