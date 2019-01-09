@@ -85,14 +85,6 @@ class UsageStatsOptoutBlockPlugin extends BlockPlugin {
 	}
 
 	/**
-	 * @copydoc BlockPlugin::getBlockContext()
-	 */
-	function getBlockContext() {
-		// if enabled, this block has to be in the sidebar
-		return BLOCK_CONTEXT_SIDEBAR;
-	}
-
-	/**
 	 * copydoc BlockPlugin::getBlockTemplateFilename()
 	 */
 	function getBlockTemplateFilename() {
