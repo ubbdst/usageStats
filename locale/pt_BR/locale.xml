@@ -43,7 +43,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Não foi possível carregar os dados extraídos do arquivo {$file}. O arquivo foi transferido para novo processamento.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">O plugin de estatísticas de uso está desativado. Nenhum arquivo de log processado.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">O diretório {$directory} não está vazio. Isto poderia indicar que um processo falhou anteriormente, ou um processo está executando atualmente. Este arquivo será automaticamente reprocessado se você estiver usando oscheduledTasksAutoStage.xml, caso contrário, você precisará mover manualmente os arquivos órfãos no diretório de processamento de volta para o diretório principal.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">A lista de bots COUNTER {$botlist} não pode ser usada. Há diferentes razões para isso. Verifique se o arquivo da lista está na pasta 'lib/pkp/plugins/generic/usageStats/lib/counter'. Verifique também as permissões da pasta e que há apenas um arquivo na pasta.</message>
 	<message key="plugins.reports.usageStats.report.displayName">Relatório de estatísticas de uso do OMP</message>
 	<message key="plugins.reports.usageStats.report.description">Relatório padrão de estatísticas de uso (compatível com COUNTER)</message>
 	<message key="plugins.generic.usageStats.optout.displayName">Informações Privadas de Estatística de Uso</message>

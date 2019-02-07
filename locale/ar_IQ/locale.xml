@@ -48,7 +48,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">تعذر تحميل البيات المستقطعة من الملف {$file}. الخطأ كان: {$error}. تم نقل الملف إلى المنصة مرة أخرى.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">تم تعطيل إضافة إحصائيات الوصول. لا توجد ملفات وقوعات لمعالجتها.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">إن المسار {$directory} غير خالٍ. قد يكون هذا مؤشراً على عملية فاشلة سابقاً أو عملية جارية حالياً. ستعاد معالجة هذا الملف تلقائياً إن كنت تستعمل scheduledTasksAutoStage.xml أيضاً، وإلا، ستكون مضطراً على نقل أي ملفات متروكة في حافظة ملفات المعالجة إلى حافظة ملفات التشغيل يدوياً.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">تعذر العثور على قائمة COUNTER، أو هناك أكثر من قائمة واحدة. تعذرت معالجة الملف {$file}.</message>
 	<message key="plugins.generic.usageStats.displayName">إحصائيات الاستعمال</message>
 	<message key="plugins.generic.usageStats.description">إحصائيات استعمال مكونات البيانات الحالية. بالإمكان استعمال ملفات سجل وقوعات الوصول لاستقطاع الإحصائيات.</message>
 

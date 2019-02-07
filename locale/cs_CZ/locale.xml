@@ -46,7 +46,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Nelze nahrát data extrahovaná ze souboru {$file}. Soubor byl znovu přesunut do stage.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">Plugin statistik využití je zakázán. Nebyly zpracovány žádné soubory logů.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">Adresář {$directory} není prázdný. To může znamenat dřívější selhání procesu nebo souběžně probíhající proces. Tento soubor bude automaticky přepracován, pokud používáte také scheduledTasksAutoStage.xml, jinak budete muset ručně přesunout všechny osiřelé soubory do adresáře pro zpracování zpět do adresáře stage.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">Seznam COUNTER bota  {$botlist} nelze použít. Existuje několik důvodů. Zkontrolujte, zda je soubor seznamu uvnitř složky lib/pkp/plugins/generic/usageStats/lib/counter. Také zkontrolujte oprávnění této složky a zkontrolujte, zda je uvnitř pouze jeden soubor.</message>
 	<message key="plugins.generic.usageStats.optout.displayName">Informace o ochraně soukromí v rámci statistik využití</message>
 	<message key="plugins.generic.usageStats.displayName">Statistiky využití</message>
 	<message key="plugins.generic.usageStats.description">Aktuální statistika využití datových objektů. Můžete použít soubory protokolu serveru pro získání statistik.</message>

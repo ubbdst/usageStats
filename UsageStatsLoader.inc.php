@@ -28,9 +28,6 @@ class UsageStatsLoader extends FileLoader {
 	/** @var $_plugin Plugin */
 	var $_plugin;
 
-	/** @var $_counterRobotsListFile mixed string (file exists), false (file does not exist), null (file not checked yet) */
-	var $_counterRobotsListFile = null;
-
 	/** @var $_contextsByPath array */
 	var $_contextsByPath;
 
@@ -115,11 +112,6 @@ class UsageStatsLoader extends FileLoader {
 			return false;
 		}
 
-		if (!$this->getCounterRobotListFile() || !file_exists($this->getCounterRobotListFile())) {
-			$this->addExecutionLogEntry(__('plugins.generic.usageStats.noCounterBotList', array('botlist' => $this->getCounterRobotListFile())), SCHEDULED_TASK_MESSAGE_TYPE_WARNING);
-			return false;
-		}
-
 		// It's possible that the processing directory has files that
 		// were being processed but the php process was stopped before
 		// finishing the processing, or there may be a concurrent process running.
@@ -175,7 +167,7 @@ class UsageStatsLoader extends FileLoader {
 			if (!in_array($entryData['returnCode'], $sucessfulReturnCodes)) continue;
 
 			// Avoid bots.
-			if (Core::isUserAgentBot($entryData['userAgent'], $this->getCounterRobotListFile())) continue;
+			if (Core::isUserAgentBot($entryData['userAgent'])) continue;
 
 			list($assocType, $contextPaths, $page, $op, $args) = $this->_getUrlMatches($entryData['url'], $filePath, $lineNumber);
 			if ($assocType && $contextPaths && $page && $op) {
@@ -778,30 +770,5 @@ class UsageStatsLoader extends FileLoader {
 		return true;
 	}
 
-	/**
-	 * Get the COUNTER robot list file.
-	 * @return mixed string or false in case of error.
-	 */
-	function getCounterRobotListFile() {
-		// Return cache of prior results, if possible
-		if ($this->_counterRobotsListFile !== null) {
-			return $this->_counterRobotsListFile;
-		}
-		$file = null;
-		$dir =  $this->_plugin->getPluginPath() . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR . 'counterBots' .  DIRECTORY_SEPARATOR . 'generated';
-
-		// We only expect one file inside the directory.
-		$fileCount = 0;
-		foreach (glob($dir . DIRECTORY_SEPARATOR . "*") as $file) {
-			$fileCount++;
-		}
-		if (!$file || $fileCount !== 1) {
-			$this->_counterRobotsListFile = false;
-		} else {
-			$this->_counterRobotsListFile = $file;
-		}
-
-		return $this->_counterRobotsListFile;
-	}
 }
 

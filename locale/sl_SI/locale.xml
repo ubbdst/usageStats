@@ -48,7 +48,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Podatkov iz datoteke {$file} ni bilo mogoče naložiti. Datoteka je bila ponovno postavljena v vrsto.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">Vtičnik za statistike uporabe je onemogočen. Nobena dnevniška datoteka ni bila obdelana.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">Mapa {$directory} ni prazna. To lahko pomeni, da je prišlo pred tem do napake pri predhodnem ali vzporednem procesu. Ta datoteka bo avtomatsko ponovno obdelana, če uporabljate tudi scheduledTasksAutoStage.xml, v nasprotnem boste morali ročno prestaviti neobdelane datoteke v mapo z datotekami za obdelati.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">Seznam COUNTER {$botlist} ne more biti uporabljen. Razlogov za to je več. Preverite, če je datoteka s seznamom v mapi 'lib/pkp/plugins/generic/usageStats/lib/counter'. Pravtako preverite pravice za dostop do mape in da je le ena datoteka v mapi.</message>
 	<message key="plugins.generic.usageStats.displayName">Statistike uporabe</message>
 	<message key="plugins.generic.usageStats.description">Prikaže statistike uporabe. Lahko uporabi strežniške datoteke z dnevniki uporabe, da pridobi podatke.</message>
 

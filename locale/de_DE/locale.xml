@@ -48,7 +48,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Konnte keine extrahierten Daten aus Datei {$file} laden. Die Datei wurde entfernt, um sie erneut zu bearbeiten.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">Das Nutzungsstatistik-Plugin ist deaktiviert. Es wurden keine Logdateien verarbeitet.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">Das Verzeichnis {$directory} ist nicht leer. Dies kann auf einen zuvor gescheiterten oder einen momentan laufenden Prozess hinweisen. Diese Datei wird automatisch erneut verarbeitet, falls Sie auch scheduledTasksAutoStage.xml benutzen; ansonsten werden Sie manuell alle verwaisten Dateien aus dem Verarbeitungsverzeichnis zurück in das Bereitstellungsverzeichnis verschieben müssen.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">Die COUNTER-Bot-Liste {$botlist} konnte nicht benutzt werden. Dies kann verschiedene Gründe haben. Stellen Sie sicher, dass die Listendatei im Verzeichnis 'lib/pkp/plugins/generic/usageStats/lib/counter' liegt. Prüfen Sie bitte auch die Zugriffsrechte dieses Ordners und stellen Sie sicher, dass nur eine Datei in diesem Ordner liegt.</message>
 	<message key="plugins.generic.usageStats.displayName">Nutzungsstatistik</message>
 	<message key="plugins.generic.usageStats.description">Zeigt Nutzungsstatistik zu Objekten an. Kann Server-Logdateien benutzen, um Statistiken zu extrahieren.</message>
 
