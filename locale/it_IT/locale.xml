@@ -48,7 +48,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Non si riesce ad elaborare i dati del file {$file}. Il file è stato riportato nella dir stage di nuovo.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">Plugin per le statistiche non abilitato. I file di log non vengono elaborati.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">La directory {$directory} non è vuota. Questo indica che un processo precedente è fallito o che due processi sono partiti in parallelo. Il file verrà rilavorato in automatico se stai usando anche scheduledTasksAutoStage.xml, altrimenti devi spostare maualmente il file orfano dalla dir processing nella dir stage.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">La lista dei bot di COUNTER, {$botlist}, non può essere usata. Ci possono essere un paio di motivazioni al riguardo. Controlla se la lista è nella dir  'lib/pkp/plugins/generic/usageStats/lib/counter'. Controlla anche i permessi della dir e se c'è un solo file al suo interno.</message>
 	<message key="plugins.generic.usageStats.displayName">Statistiche d'uso</message>
 	<message key="plugins.generic.usageStats.description">Presenta le statistiche d'uso. Può usare il file access del server per estrarre le statistiche.</message>
 
