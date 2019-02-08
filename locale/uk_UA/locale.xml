@@ -48,7 +48,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Не вдалося завантажити дані, отримані з файлу {$file}. Файл був перенесений знову в каталог stage.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">Модуль статистики використання вимкнено. Файли журналу не опрацьовуються.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">Каталог {$directory} не порожній. Це може вказувати на те, що раніше відбулася невдала обробка або одночасно працює інша обробка. Цей файл автоматично буде опрацьований, якщо ви використовуєте scheduledTasksAutoStage.xml, в іншому випадку вам доведеться вручну перенести всі файли, які залишилися з каталогу processing назад у каталог stage.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">Список ботів COUNTER {$botlist} не може бути використаний. Є кілька причин для цього. Перевірте, чи файл списку знаходиться в каталозі 'lib/pkp/plugins/generic/usageStats/lib/counter'. Також перевірте права на цю папку та те, чи всередині лише один файл.</message>
 	<message key="plugins.generic.usageStats.displayName">Статистика використання</message>
 	<message key="plugins.generic.usageStats.description">Надає дані статистики використання об'єктів. Можна використовувати файли журналу доступу до сервера для отримання статистики.Present data objects usage statistics. Can use server access log files to extract statistics.</message>
 

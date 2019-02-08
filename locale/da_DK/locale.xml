@@ -47,7 +47,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Kunne ikke indlæse data hentet fra fil {$file}. Filen blev flyttet til trinnet igen.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">Brugerstatistik-plugin er deaktiveret. Ingen log-filer er blevet færdigbehandlet.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">Mappen {$directory} er ikke tom. Dette kan indikere en tidligere mislykket proces eller en samtidigt kørende proces. Denne fil vil automatisk blive behandlet på ny, hvis du også bruger scheduledTasksAutoStage.xml, ellers skal du manuelt flytte eventuelle forældreløse filer i behandlingsmappen tilbage til trinnets mappe.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">COUNTER-bot-listen {$botlist} kan ikke bruges. Det kan der være flere grunde til. Kontroller om listefilen findes i mappen "lib/pkp/plugins/generic/usageStats/lib/counter". Kontroller også mappens adgangsstatus, og at der kun er en fil indeni.</message>
 	<message key="plugins.generic.usageStats.displayName">Brugerstatistik</message>
 	<message key="plugins.generic.usageStats.description">Viser dataobjekters brugsstatistik. Kan anvende serveradgangs-logfiler til at udtrække statistikker.</message>
 	<message key="plugins.reports.usageStats.report.displayName">PKP brugerstatistik-rapport</message>

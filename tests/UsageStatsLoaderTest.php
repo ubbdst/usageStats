@@ -37,29 +37,4 @@ class UsageStatsLoaderTest extends PKPTestCase {
 			->getMock();
         }
 
-	//
-	// Unit tests
-	//
-	/**
-	 * @covers UsageStatsLoader::getCounterRobotListFile()
-	 */
-	public function testGetCounterRobotListFile() {
-
-		// The getCounterRobotListFile() method will call $this->_plugin->getPluginPath()
-		// Mock this cal
-		$this->mockPlugin = $this->getMockBuilder('UsageStatsPlugin')
-			->setMethods(array('getPluginPath'))
-			->getMock();
-		$this->mockPlugin
-			->expects($this->once())
-			->method('getPluginPath')
-			->will($this->returnValue('plugins/generic/usageStats'));
-		$this->loader->_plugin = $this->mockPlugin;
-
-		// assert bot list filename is present and readable
-		$filename = $this->loader->getCounterRobotListFile();
-		$foundFile = $filename && is_readable($filename);
-		self::assertTrue($foundFile, 'getCounterRobotListFile() did not return a readable filename');
-	}
 }
-

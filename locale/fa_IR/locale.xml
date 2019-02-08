@@ -45,7 +45,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">داده های استخراج شده از فایل {$file} قابل بارگزاری نیست. فایل دوباره به مرحله منتقل شد.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">افزونه آمار کارکرد غیرفعال است. هیچ فایل گزارشی پردازش نشده است.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">پوشه {$directory}  خالی نیست. که میتواند ناشی از یک خطا در پردازشهای پیشین یا پردازشهای در حال اجرا باشد. این فایل به صورت خودکار پردازش می شود اگر شما همچنین از scheduledTasksAutoStage.xml استفاده می کنید، در غیر این صورت شما باید تمامی فایل موجود در مسیر پردازش را به صورت دستی به مسیر مرحله انتقال دهید.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">لیست COUNTER {$botlist} قابل استفاده نیست که ناشی از دو چیز می تواند باشد. بررسی کنید که آیا فایل لیست داخل پوشه 'lib/pkp/plugins/generic/usageStats/lib/counter' است. همچنین مجوزهای دسترسی به پوشه را بررسی کنید و اینکه فقط یک فایل درون آن وجود دارد.</message>
 	<message key="plugins.generic.usageStats.displayName">آمار کارکرد</message>
 	<message key="plugins.generic.usageStats.description">آمار کارکرد داده های موجود. می توانید از فایل های گزارشات دسترسی سرور برای استخراج آمار استفاده کنید.</message>
 	<message key="plugins.reports.usageStats.report.displayName">گزارش آمار کارکرد سامانه</message>

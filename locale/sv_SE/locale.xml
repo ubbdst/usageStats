@@ -48,7 +48,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Kunde inte läsa in data extraherade från filen {$file}. Filen flyttades till stage igen.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">Pluginet för användningsstatistik är avaktiverat. Inga loggfiler behandlades.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">Katalogen {$directory} är inte tom. Det här kan vara ett tecken på en tidigare process som fallerat, eller en annan process som körs samtidigt. Filen kommer behandlas på nytt automatiskt om du också använder scheduledTasksAutoStage.xml. I annat fall behöver du manuellt flytta övergivna filer från processing-katalogen till stage-katalogen.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">COUNTER-botlistan {$botlist} går inte att använda. Detta kan bero på flera orsaker. Se om listans fil är placerad i katalogen 'lib/pkp/plugins/generic/usageStats/lib/counter'. Kolla också om rättigheterna för katalogen och om det bara finns en fil där.</message>
 	<message key="plugins.generic.usageStats.displayName">Användningsstatistik</message>
 	<message key="plugins.generic.usageStats.description">Presentera användningsstatistik för objekt. Kan använda serverns åtkomstloggar för att extrahera statistik.</message>
 
