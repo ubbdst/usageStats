@@ -46,7 +46,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Tiedostosta {$file} haettua dataa ei voitu ladata. Tiedosto siirrettiin takaisin stage-kansioon.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">Kävijätilastolisäosa on pois päältä. Lokitiedostoja ei käsitelty.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">Hakemisto {$directory} ei ole tyhjä. Tämä saattaa johtua aiemmasta epäonnistuneesta käsittelystä tai parhaillaan meneillään olevasta toisesta käsittelystä. Tämä tiedosto käsitellään automaattisesti uudelleen, jos käytät scheduledTasksAutoStage.xml-tiedostoa. Muussa tapauksessa sinun pitää siirtää manuaalisesti jäljelle jääneet tiedostot processing-hakemistossa olevat tiedostot takaisin stage-hakemistoon.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">COUNTER-hakurobottilistaa {$botlist} ei voi käyttää. Tarkista, että lista on hakemistossa 'lib/pkp/plugins/generic/usageStats/lib/counter'. Tarkista myös hakemiston oikeudet ja että hakemistossa on vain yksi tiedosto.</message>
 	<message key="plugins.generic.usageStats.displayName">Kävijätilastot</message>
 	<message key="plugins.generic.usageStats.description">Esitä dataobjektien kävijätilastoja. Lisäosa voi käyttää kävijälokitiedostoja tietojen hakemiseen.</message>
 	<message key="plugins.reports.usageStats.report.displayName">PKP kävijätilastoraportti</message>

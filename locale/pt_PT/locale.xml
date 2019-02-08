@@ -43,7 +43,6 @@
 	<message key="plugins.generic.usageStats.loadDataError">Não foi possível carregar os dados extraídos do ficheiro {$file}. O ficheiro foi transferido para novo processamento.</message>
 	<message key="plugins.generic.usageStats.pluginNotEnabled">O plugin de Estatísticas de Uso está desativado. Nenhum arquivo de histórico processado.</message>
 	<message key="plugins.generic.usageStats.processingPathNotEmpty">A pasta {$directory} não está vazia. Isto poderá indicar que um processo falhou anteriormente, ou que um processo está a ser executado atualmente. Este ficheiro será automaticamente reprocessado se estiver a usar o scheduledTasksAutoStage.xml. Caso contrário, precisará de mover, manualmente, os ficheiros órfãos na pasta de processamento de volta para a pasta principal.</message>
-	<message key="plugins.generic.usageStats.noCounterBotList">A lista de robôs COUNTER {$botlist} não pode ser usada. Há diferentes razões para isso. Verifique se o ficheiro com a lista está na pasta 'lib/pkp/plugins/generic/usageStats/lib/counter'. Verifique também as permissões da pasta e que contém um único ficheiro.</message>
 	<message key="plugins.reports.usageStats.report.displayName">Relatório de estatísticas de uso do PKP</message>
 	<message key="plugins.reports.usageStats.report.description">Relatório pré-definido de estatísticas de uso (compatível com COUNTER)</message>
 	<message key="plugins.generic.usageStats.optout.displayName">Privacidade da Informação das Estatística de Uso</message>
