@@ -91,7 +91,7 @@ class UsageStatsPlugin extends GenericPlugin {
 			$this->_saltpath = $this->getSetting(CONTEXT_ID_NONE, 'saltFilepath');
 			// Check config for backward compatibility.
 			if (!$this->_saltpath) $this->_saltpath = Config::getVar('usageStats', 'salt_filepath');
-			$request = Application::getRequest();
+			$request = Application::get()->getRequest();
 			$this->_optedOut = $request->getCookieVar('usageStats-opt-out');
 			if ($this->_optedOut) {
 				// Renew the Opt-Out cookie if present.
@@ -419,7 +419,7 @@ class UsageStatsPlugin extends GenericPlugin {
 	 */
 	function loadJavascript($contexts) {
 
-		$request = Application::getRequest();
+		$request = Application::get()->getRequest();
 		$templateMgr = TemplateManager::getManager($request);
 
 		// Register Chart.js on the frontend article view
@@ -478,7 +478,7 @@ class UsageStatsPlugin extends GenericPlugin {
 		$script_data .= 'pkpUsageStats.data.' . $namespace . ' = ' . json_encode($data) .';';
 
 		// Register the data
-		$request = Application::getRequest();
+		$request = Application::get()->getRequest();
 		$templateMgr = TemplateManager::getManager($request);
 		$templateMgr->addJavaScript(
 			'pkpUsageStatsData',
