@@ -49,7 +49,8 @@ class UsageStatsSettingsForm extends Form {
 		$this->setData('selectedOptionalColumns', $plugin->getSetting(CONTEXT_ID_NONE, 'optionalColumns'));
 		$this->setData('compressArchives', $plugin->getSetting(CONTEXT_ID_NONE, 'compressArchives'));
 
-		$context = Request::getContext();
+		$request = Application::get()->getRequest();
+		$context = $request->getContext();
 		$this->setData('displayStatistics', $plugin->_getPluginSetting($context, 'displayStatistics'));
 		$this->setData('datasetMaxCount', $plugin->_getPluginSetting($context, 'datasetMaxCount'));
 		$this->setData('chartType', $plugin->_getPluginSetting($context, 'chartType'));
@@ -107,7 +108,8 @@ class UsageStatsSettingsForm extends Form {
 		$plugin->updateSetting(CONTEXT_ID_NONE, 'compressArchives', $this->getData('compressArchives'), 'bool');
 		$plugin->updateSetting(CONTEXT_ID_NONE, 'saltFilepath', $this->getData('saltFilepath'));
 
-		$context = Request::getContext();
+		$request = Application::get()->getRequest();
+		$context = $request->getContext();
 		$contextId = $context ? $context->getId() : CONTEXT_ID_NONE;
 		$plugin->updateSetting($contextId, 'displayStatistics', $this->getData('displayStatistics'), 'bool');
 		$plugin->updateSetting($contextId, 'chartType', $this->getData('chartType'));
@@ -116,7 +118,7 @@ class UsageStatsSettingsForm extends Form {
 		$optionalColumns = $this->getData('optionalColumns');
 		// Make sure optional columns data makes sense.
 		if ($optionalColumns && in_array(STATISTICS_DIMENSION_CITY, $optionalColumns) && !in_array(STATISTICS_DIMENSION_REGION, $optionalColumns)) {
-			$user = Request::getUser();
+			$user = $request->getUser();
 			import('classes.notification.NotificationManager');
 			$notificationManager = new NotificationManager();
 			$notificationManager->createTrivialNotification(
