@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale/nb_NO/locale.xml
+  *
+  * Copyright (c) 2014-2017 Simon Fraser University
+  * Copyright (c) 2003-2017 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+
+<locale name="nb_NO" full_name="Norsk Bokmål">
+	<message key="plugins.generic.usageStats.settings.logging">Alternativer for loggføring av tilgang</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles">Lag loggfiler</message>
+	<message key="plugins.generic.usageStats.settings.createLogFiles.description">Aktiverer du dette alternative vil programtillegget opprette loggfiler i mappen. Disse filene bør brukes for å hente ut data over brukerstatistikk. Om du ikke ønsker å opprette filer for loggføring av tilganger, kan du slå av dette alternativet og bruke filer med loggføringen av tilgang på din egen server.</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex">*Parseing av loggfiler regex</message>
+	<message key="plugins.generic.usageStats.settings.logParseRegex.description">*Standarden regulære uttrykk (regex) kan parse loggfiler over apachetilganger i kombinert format og dessuten i programtilleggets loggfiler. Hvis dersom loggfilene over tilgang er i et annet format, må du legge inn en regex som kan parse dem og gi dem forventede verdier. Se UsageStatsLoader::_getDataFromLogEntry() for mer informasjon.</message>
+	<message key="plugins.generic.usageStats.settings.saved">Innstillinger for programtillegg for brukerstatistikk lagret</message>
+	<message key="plugins.generic.usageStats.openFileFailed">Filen {$file} kunne ikke åpnes og ble avvist</message>
+	<message key="plugins.generic.usageStats.invalidLogEntry">Filen ble avvist. Linjenummeret {$lineNumber} fra filen {$file} er ikke en gyldig loggføring.</message>
+	<message key="plugins.generic.usageStats.displayName">Brukerstatistikk</message>
+	<message key="plugins.generic.usageStats.description">Vis brukerstatistikk for data objekter. Du kan bruke loggfilene over tilgang til serveren for å hente ut statitsikk.</message>
+	<message key="plugins.reports.usageStats.report.displayName">OJS rapport over brukerstatistikk</message>
+	<message key="plugins.reports.usageStats.report.description">OJS standard rapport over brukerstatistikk *(COUNTER-klar)</message>
+	<message key="plugins.reports.usageStats.metricType">OJS/COUNTER</message>
+	<message key="plugins.reports.usageStats.metricType.full">Open Journal Systems statistikk (COUNTER-klar)</message>
+	<message key="plugins.generic.usageStats.settings.statsDisplayOptions.siteWide">Hvert enkelt tidsskrift kan overstyre disse innstillingene fra programtilleggssiden sin</message>
+	<message key="plugins.generic.usageStats.optout.description"><![CDATA[<h3>Generell personvernsinformasjon</h3>
+        <p>Gå til vår <a href="{$privacyStatementUrl}">erklæring om personvern</a>.</p>
+        <h3>Brukerstatistikk</h3>
+        <p>For å kunne analyse bruken og innflytelsen av tidsskriftet og dets artikler, samler og loggfører vi adganger til tidsskriftets hjemmeside, utgaver, artikler, oppsettfiler og supplerende filer. Alle data blir anonymisert. Ingen personlig informasjon blir loggført. IP-adresser blir anonymisert ved hashing (ved bruk av <em>SHA 256</em>) i kombinasjon med en <em>sikker 64 karakterer lang salt</em> som blir automatisk <em>tilfeldig generert og overstyrt daglig</em>. IP-adressene kan ikke rekonstrueres.</p>
+        <p>Følgende informasjon blir samlet sammen med de anonymiserte IP-adressene:</p>
+        <ul>
+        <li>Tilgangstype (f.eks. administrative)</li>
+        <li>Tidspunkt</li>
+        <li>Forespurt URL</li>
+        <li>HTTP statuskode</li>
+        <li>Nettleser</li>
+        </ul>
+        <p>Det samlede datamateriale er bare brukt for evaluering. Ingen IP-adresser er knyttet til brukeridentiteter. Det er teknisk umulig å spore et spesifikt datasett til en spesifikk IP-adresse.</p>]]></message>
+</locale>
